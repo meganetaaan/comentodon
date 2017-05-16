@@ -1,0 +1,32 @@
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:1.5em;
+  color: #FAFAFA;
+}
+
+.comment {
+  position: absolute;
+  animation: flow 8s;
+  animation-timing-function: linear;
+  opacity: 0.9;
+  color: #FAFAFA;
+  font-size: 2em;
+  font-weight: bold;
+  -webkit-text-stroke: 1px #222;
+  text-stroke: 1px #222;
+}
+
+@keyframes flow {
+  0% {transform: translateX(100vw)}
+  100% {transform: translateX(-100%)}
+}

@@ -1,0 +1,29 @@
+{
+  "name": "tootream",
+  "version": "0.0.1",
+  "description": "an extention that lays comments from mastodon over current page.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "watchify ./index.js -o 'exorcist ./app/build.js.map > ./app/bundle.js' -d",
+    "server": "live-server --port=8003 --watch=app/*",
+    "start": "npm run watch & npm run server",
+    "build": "npm run uglifyjs dest/build.js > dest/build.min.js"
+  },
+  "author": "Shinya Ishikawa",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^14.3.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-node": "^4.2.2",
+    "eslint-plugin-promise": "^3.5.0",
+    "exorcist": "^0.4.0",
+    "live-server": "^1.0.0",
+    "watchify": "^3.9.0",
+    "webworkify": "^1.4.0"
+  },
+  "dependencies": {
+    "mastodon-api": "^1.2.0"
+  }
+}
