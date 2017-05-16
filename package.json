@@ -1,5 +1,5 @@
 {
-  "name": "tootream",
+  "name": "comentodon",
   "version": "0.0.1",
   "description": "an extention that lays comments from mastodon over current page.",
   "main": "index.js",
